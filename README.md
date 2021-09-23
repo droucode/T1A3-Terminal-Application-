@@ -4,7 +4,7 @@
 #### R5: Develop a statement of purpose and scope for your application. It must include:
 
 ##### describe at a high level what the application will do
-The terminal application created will be a productivity buddy. The main feature of the terminal application will a clock and/or timer. The user will set the timer for any time interval required, for example 35 minutes. The user will input the time intervals in which the clock will “check in” with th        `e user. These check in, will be a variety of incrustations to the user such as: “stretch your neck and shoulders” “you’re on the right track.” 
+The terminal application created will be a productivity buddy. The main feature of the terminal application will a clock and/or timer. The user will set the timer for any time interval required, for example 35 minutes. The user will input the time intervals in which the clock will check in with the user. These check in's, will be a variety of incrustations to the user such as: “stretch your neck and shoulders” “you’re on the right track.” 
 
 #### identify the problem it will solve and explain why you are developing it
 ##### The problem that will be addressed through this application: 
