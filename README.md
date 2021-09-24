@@ -52,7 +52,7 @@ _______________________________________________________________________________
 
 You must include:
 - steps to install the application
-gems: Timers 4.3.3 
+gems: Timers 4.3.3, Colorize 0.8.1
 - any dependencies required by the application to operate
 - any system/hardware requirements
 
