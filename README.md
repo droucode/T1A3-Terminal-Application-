@@ -21,3 +21,49 @@ The target audience will be anybody with a task. Students working on their softw
 
 ##### explain how a member of the target audience will use it
 Target audience: tech student working on an assignment. The student will select their timeframe, select their check in intervals and begin their work. For groupwork: the team will repeat the steps above for optimum focus and group workflow. 
+
+____________________________________________________________________________________________________________________
+#### R6	Develop a list of features that will be included in the application. It must include:
+- at least THREE features
+- describe each feature
+
+Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
+- use of variables and the concept of variable scope
+- loops and conditional control structures
+- error handling
+
+Consult with your educator to check your features are sufficient .
+
+_____________________________________________________________________________________________________________________
+R7	Develop an outline of the user interaction and experience for the application.
+Your outline must include:
+- how the user will find out how to interact with / use each feature
+- how the user will interact with / use each feature
+- how errors will be handled by the application and displayed to the user
+
+_____________________________________________________________________________________________________________________
+
+#### R8	Develop a diagram which describes the control flow of your application. Your diagram must:
+- show the workflow/logic and/or integration of the features in your application for each feature.
+- utilise a recognised format or set of conventions for a control flow diagram, such as UML.
+_______________________________________________________________________________
+
+#### R10 Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
+
+You must include:
+- steps to install the application
+gems: Timers 4.3.3 
+- any dependencies required by the application to operate
+- any system/hardware requirements
+
+
+_____________________________________________________________________________________
+#### R17	Design TWO tests which check that the application is running as expected.
+
+Each test should:
+- cover a different feature of the application
+- state what is being tested
+- provide at least TWO test cases and the expected results for each test case
+
+> An outline of the testing procedure and cases should be included with the source code of the application
+
