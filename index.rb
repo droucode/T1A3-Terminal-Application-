@@ -1,5 +1,20 @@
-# pass the number of seconds as the parameter
 
+require 'colorize'
+crunchtime = "
+
+                ─────▄████▀█▄
+                ───▄█████████████████▄
+                ─▄█████.▼.▼.▼.▼.▼.▼▼▼▼
+               ▄███████▄.▲.▲▲▲▲▲▲▲▲
+              ████████████████████▀▀
+     
+    █▀▀ █▀█ █░█ █▄░█ █▀▀ █░█ ▄▄ ▀█▀ █ █▀▄▀█ █▀▀
+    █▄▄ █▀▄ █▄█ █░▀█ █▄▄ █▀█ ░░ ░█░ █ █░▀░█ ██▄ "
+
+puts crunchtime.light_yellow
+
+
+# pass the number of seconds as the parameter
 seconds = eval(ARGV[0]).to_i
 start_time = Time.now
 
