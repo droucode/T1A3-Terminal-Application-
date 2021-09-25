@@ -25,7 +25,10 @@ Target audience: tech student working on an assignment. The student will select 
 ____________________________________________________________________________________________________________________
 #### R6	Develop a list of features that will be included in the application. It must include:
 - at least THREE features
+Menu 
 - describe each feature
+Menu: The application will have a menu, which will be the first point of naviagtion for the user. The menu will direct the user to select from timer options (Individual or group)
+
 
 Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
 - use of variables and the concept of variable scope
@@ -35,7 +38,7 @@ Note: Ensure that your features above allow you to demonstrate your understandin
 Consult with your educator to check your features are sufficient .
 
 _____________________________________________________________________________________________________________________
-R7	Develop an outline of the user interaction and experience for the application.
+#### R7	Develop an outline of the user interaction and experience for the application.
 Your outline must include:
 - how the user will find out how to interact with / use each feature
 - how the user will interact with / use each feature
@@ -52,7 +55,7 @@ _______________________________________________________________________________
 
 You must include:
 - steps to install the application
-gems: Timers 4.3.3, Colorize 0.8.1
+gems: Timers 4.3.3, Colorize 0.8.1, tty-prompt 0.23.1
 - any dependencies required by the application to operate
 - any system/hardware requirements
 
