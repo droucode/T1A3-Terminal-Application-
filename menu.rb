@@ -5,8 +5,9 @@ require 'tty-prompt'
 
 require_relative 'ascii.rb'
 
+greeting = "Are you ready?"
 prompt = TTY::Prompt.new
-prompt.select("Are you ready?", %w(Individual_Timer Group_Timer))
+prompt.select(greeting, %w(Individual_Timer Group_Timer))
 
 
 

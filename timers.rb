@@ -6,10 +6,10 @@ require 'tty'
 # require_relative 'ascii.rb'
 
 
-# seconds = eval(ARGV[0]).to_i
+# seconds = eval(ARGV[0]).to_i 
 # start_time = Time.now
 
-# loop do
+# loop do 
 #   elapsed = Time.now - start_time
 #   print "\e[D" * 17
 #   print "\033[K"
