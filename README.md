@@ -25,7 +25,12 @@ Target audience: tech student working on an assignment. The student will select 
 ____________________________________________________________________________________________________________________
 #### R6	Develop a list of features that will be included in the application. It must include:
 - at least THREE features
-Menu 
+Menu (variables)
+Timer (array,.map)
+Timer (pause)
+
+
+
 - describe each feature
 Menu: The application will have a menu, which will be the first point of naviagtion for the user. The menu will direct the user to select from timer options (Individual or group)
 

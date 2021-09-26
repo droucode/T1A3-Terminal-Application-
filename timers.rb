@@ -1,33 +1,56 @@
 
 require 'colorize'
 require 'timers'
-require 'bundler'
-require 'tty'
-# require_relative 'ascii.rb'
+require 'tty-prompt'
 
-
-# seconds = eval(ARGV[0]).to_i 
-# start_time = Time.now
-
-# loop do 
-#   elapsed = Time.now - start_time
-#   print "\e[D" * 17
-#   print "\033[K"
-
-#   if elapsed > seconds
-#     puts "Time's up!"
-#     exit
-#   end
-
-#   print Time.at(seconds - elapsed).utc.strftime('%H:%M:%S.%3N')
-#   sleep(0.05)
-# end
+require_relative 'ascii.rb'
+require_relative 'menu.rb'
 
 Timers::Group.new
 timers = Timers::Group.new
 Timers::Group#after
-two_second_timer = timers.after(2) { puts "Stretch your shoulders" }
-five_second_timer = timers.after(5) { puts "jump"}
+
+# exercise variable is an array containing two arrays for exercise types
+exercise = [
+    high_intensity = ["starjumps", "situps"],
+    low_intensity = ["breathing", "meditation"] 
+]
+# setting intensity variable storing the matching array as value
+high = exercise[0]
+low = exercise[1]
+
+# greeting to user prompting a selection
+introduction = puts "Please select your intensity 💪🏾"
+prompt = TTY::Prompt.new
+
+exercise_choice = prompt.select(introduction) do |menu|
+    menu.choice "High"
+    menu.choice "Low"
+end 
+
+if exercise_choice == "High"
+	puts high
+elsif exercise_choice == "Low"
+    puts low
+else
+    puts "Forgetting something?"
+end
+
+
+# variable for user input (exercise intensity)
+
+
+
+
+
+
+# ask for exercise selection
+# selection_variable = gets.chomp()
+# if exercise high_intensity then iterate through each item in that array
+# elsif exercise low_intensity then iterate through each item in that array
+# else (no selection) puts "forgetting something?"
+two_second_timer = timers.after(5) { puts high[0]}
+five_second_timer = timers.after(20) { puts exercise[1]}
 Timers::Timer#cancel 
 
 Timers::Group#wait
@@ -35,6 +58,6 @@ Timers::Group#wait
 timers.wait
 # The script will now print "Strecth your shoulders"
 Timers::Group#every 
-every_five_seconds = timers.every(5) { puts "stretch again" }
+every_five_seconds = timers.every(100) { puts "stretch again" }
 loop { timers.wait } 
 
