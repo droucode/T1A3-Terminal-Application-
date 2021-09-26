@@ -18,7 +18,7 @@ require_relative 'ascii.rb'
 
 greeting = "Are you ready?"
 prompt = TTY::Prompt.new
-prompt.select(greeting, %w(Pre_Exercise Set_Alarm ))
+prompt.select(greeting, %w(Pre_Work_Mood Set_Alarm ))
 
 
 
