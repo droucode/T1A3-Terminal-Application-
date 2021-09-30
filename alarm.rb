@@ -1,16 +1,16 @@
 require 'date'
 
 #get user input
-puts "Alarm Clock"
+puts "Your Alarm"
 puts "24 or 12 hour time? (24)/(12)"
 timeHour = gets.chomp.to_i
 if timeHour == 12
 	puts "(1) AM/ (2) PM"
 	amPM = gets.chomp.to_i
 end
-puts "What hour should you be alerted?"
+puts "Hour"
 hour = gets.chomp.to_i
-puts "How many minutes shall you be alerted?"
+puts "Minutes"
 min = gets.chomp.to_i
 
 i = 0
