@@ -1,16 +1,10 @@
 
-# require 'colorize'
-# require 'timers'
-
+require 'colorize'
+require 'timers'
 require 'tty-prompt'
 
 require_relative 'ascii.rb'
-
-
-
-greeting = "Are you ready?"
-prompt = TTY::Prompt.new
-prompt.select(greeting, %w(Pre_Work_Mood Set_Alarm ))
-
-
+# require_relative 'energy_exercise.rb'
+# require_relative 'mindfulness_exercise.rb'
+# require_relative 'class_energy.rb'
 
