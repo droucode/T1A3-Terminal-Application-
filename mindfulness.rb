@@ -34,10 +34,8 @@ mind_routine.breathing_i = "Dont lose focus of your breath, thats your anchor"
 mind_routine.body_a = "Slowly, start to roll your shoulders-5 times on each side"
 mind_routine.body_b = "Lightly strech your neck from side to side"
 
-
 notice = Pastel.new.black.on_bright_yellow.detach
 prompt = TTY::Prompt.new(active_color: notice)
-
 main_menu = prompt.select("Before you set your alarm; Run either of the routines Energise and Mindfulness. They will encourage you 
 to establish healthy and productive work habits") do |menu|
 menu.choice 'Energise Routine'
@@ -48,7 +46,6 @@ menu.choice 'User Manual'
 end 
 
 if main_menu == 'Mindfulness Routine'
-    
     start_message = timers.after(1) {puts mind_routine.start} 
     timer = timers.after(2)  {puts mind_routine.breathing_a}
     timer = timers.after(3) {puts mind_routine.breathing_b}

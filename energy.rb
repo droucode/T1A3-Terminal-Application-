@@ -32,7 +32,6 @@ energy_routine.breathing = "Take 5 deep breaths"
 
 notice = Pastel.new.black.on_bright_yellow.detach
 prompt = TTY::Prompt.new(active_color: notice)
-
 main_menu = prompt.select("Before you set your alarm; Run either of the routines Energise and Mindfulness. They will encourage you 
 to establish healthy and productive work habits") do |menu|
 menu.choice 'Energise Routine'
@@ -43,18 +42,18 @@ menu.choice 'User Manual'
 end 
 
 if main_menu == 'Energise Routine'
-timer = timers.after(1) {puts energy_routine.start}
-timer = timers.after(2) {puts energy_routine.breathing} 
-timer = timers.after(3) {puts energy_routine.stretch_a} 
-timer = timers.after(4) {puts energy_routine.stretch_b} 
-timer = timers.after(5) {puts energy_routine.stretch_c} 
+    timer = timers.after(1) {puts energy_routine.start}
+    timer = timers.after(2) {puts energy_routine.breathing} 
+    timer = timers.after(3) {puts energy_routine.stretch_a} 
+    timer = timers.after(4) {puts energy_routine.stretch_b} 
+    timer = timers.after(5) {puts energy_routine.stretch_c} 
 
-timer = timers.after(6) {puts energy_routine.movement_a}
-timer = timers.after(7) {puts energy_routine.movement_b} 
-timer = timers.after(8) {puts energy_routine.rest}
-timer = timers.after(9) {puts energy_routine.movement_c} 
-timer = timers.after(10) {puts energy_routine.movement_d} 
-timer = timers.after(11) {puts energy_routine.goal}
-timers.resume 
-11.times {timers.wait} 
+    timer = timers.after(6) {puts energy_routine.movement_a}
+    timer = timers.after(7) {puts energy_routine.movement_b} 
+    timer = timers.after(8) {puts energy_routine.rest}
+    timer = timers.after(9) {puts energy_routine.movement_c} 
+    timer = timers.after(10) {puts energy_routine.movement_d} 
+    timer = timers.after(11) {puts energy_routine.goal}
+    timers.resume 
+    11.times {timers.wait} 
 end 
