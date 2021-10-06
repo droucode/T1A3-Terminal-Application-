@@ -1,4 +1,22 @@
 require 'date'
+require 'colorize'
+require 'timers'
+require 'tty-prompt'
+require 'pastel'
+
+require_relative 'menu.rb' 
+
+notice = Pastel.new.black.on_bright_yellow.detach
+prompt = TTY::Prompt.new(active_color: notice)
+
+main_menu = prompt.select("Before you set your alarm; Run either of the routines Energise and Mindfulness. They will encourage you 
+to establish healthy and productive work habits") do |menu|
+menu.choice 'Energise Routine'
+menu.choice 'Mindfulness Routine'
+menu.choice 'Set_Alarm'
+menu.choice 'Reflection'
+menu.choice 'User Manual'
+end 
 
 #get user input
 puts "Your Alarm"

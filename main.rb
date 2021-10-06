@@ -2,7 +2,7 @@ require 'colorize'
 require 'timers'
 require 'tty-prompt'
 
-require_relative 'menu.rb'
+require_relative 'menu.rb' 
 
 class Energy_Prompts
     attr_accessor :start, :rest, :goal 
@@ -72,22 +72,22 @@ mind_stage_two = Mind_Body.new()
 mind_stage_two.body_a = "Slowly, start to roll your shoulders-5 times on each side"
 mind_stage_two.body_b = "Lightly strech your neck from side to side"
 
-greeting = puts "Are you ready?"
-    prompt = TTY::Prompt.new
-menu_choice = prompt.select(greeting, %w(Pre_Work_Mood Set_Alarm ))
-
-introduction = puts "Select your intensity"
 prompt = TTY::Prompt.new
-exercise_choice = prompt.select(introduction) do |menu|
-    menu.choice "Energise"
-    menu.choice "Mindfulness"
+main_menu = prompt.select("Before you set your alarm; Run either of the routines Energise and Mindfulness. They will encourage you 
+to establish healthy and productive work habits") do |menu|
+menu.choice 'Energise Routine'
+menu.choice 'Mindfulness Routine'
+menu.choice 'Set_Alarm'
+menu.choice 'Reflection'
+menu.choice 'User Manual'
 end 
 
 Timers::Group.new
 timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
-if exercise_choice == "Energise" 
+
+if main_menu == "Energise Routine" 
 
 start = timers.after(2) {puts energy_prompt.start}
 timer = timers.after(4) {puts energy_stage_one.breathing} 
@@ -103,10 +103,14 @@ timer = timers.after(20) {puts energy_stage_three.movement_d}
 timer = timers.after(22) {puts energy_prompt.goal}
 timers.resume 
 11.times {timers.wait}   
-prompt = TTY::Prompt.new
-menu_choice = prompt.select(greeting, %w(Repeat Set_Alarm Reflection End))
 
-elsif exercise_choice == "Mindfulness"
+main_menu = prompt.select("") do |menu|
+menu.choice 'Set_Alarm'
+menu.choice 'Reflection'
+end
+
+elsif main_menu == "Mindfulness Routine"
+    
 start_message = timers.after(2) {puts mind_prompts.start} 
 timer = timers.after(4)  {puts mind_stage_one.breathing_a}
 timer = timers.after(6) {puts mind_stage_one.breathing_b}
@@ -126,11 +130,10 @@ timer = timers.after(30) {puts mind_prompts.goal_c}
 timers.resume 
 15.times {timers.wait}
 
-prompt = TTY::Prompt.new
-menu_choice = prompt.select(greeting, %w(Repeat Set_Alarm Reflection End))
 else
-  puts "forgetting something?"  
+  puts ""  
 end
+
 
 
 
