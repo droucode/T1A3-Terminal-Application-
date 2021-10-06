@@ -17,7 +17,7 @@ end
 energy_routine = Energy.new()
 energy_routine.start = "Getting active and into your body, is great way to clear your mind and ignite your endorphines 
 before you start a task. Complete these exercises within your capabilities and have fun. This program will 
-run for roughly 6 minutes. Get ready to get your blood circulating and clear your mind ready to complete your task!"
+run for roughly 6 minutes. Get ready to get your blood circulating and clear your mind ready to complete your task!".colorize(:cyan)
 energy_routine.rest = "check your breath and rest for 10 seconds"
 energy_routine.stretch_a = "30 seconds, stretch each shoulder"
 energy_routine.stretch_b = "30 seconds, stretch your neck side to side"
@@ -27,7 +27,7 @@ energy_routine.movement_b = "30 seconds, alernating arm punches (across your bod
 energy_routine.movement_c = "30 seconds, squats"
 energy_routine.movement_d = "30 seconds, startjumps"
 energy_routine.goal = "Now that you're done, take some a couple seconds to think about what you would like
-to achieve, keep your goal achievable and work in small and prodictive blocks. Goodluck!"
+to achieve, keep your goal achievable and work in small and prodictive blocks. Goodluck!".colorize(:cyan)
 
 
 notice = Pastel.new.black.on_bright_yellow.detach
