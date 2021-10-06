@@ -11,11 +11,11 @@ Timers::Group#after
 Timers::Timer#cancel
 
 class Energy
-    attr_accessor :start, :rest, :goal, :breathing, :stretch_a, :stretch_b, :stretch_c,
+    attr_accessor :start, :rest, :goal, :stretch_a, :stretch_b, :stretch_c,
     :movement_a, :movement_b, :movement_c, :movement_d
 end 
 energy_routine = Energy.new()
-energy_routine.start = "Getting active and into your body is great way to clear your mind and ignite your endorphines, 
+energy_routine.start = "Getting active and into your body, is great way to clear your mind and ignite your endorphines 
 before you start a task. Complete these exercises within your capabilities and have fun. This program will 
 run for roughly 6 minutes. Get ready to get your blood circulating and clear your mind ready to complete your task!"
 energy_routine.rest = "check your breath and rest for 10 seconds"
@@ -28,7 +28,7 @@ energy_routine.movement_c = "30 seconds, squats"
 energy_routine.movement_d = "30 seconds, startjumps"
 energy_routine.goal = "Now that you're done, take some a couple seconds to think about what you would like
 to achieve, keep your goal achievable and work in small and prodictive blocks. Goodluck!"
-energy_routine.breathing = "Take 5 deep breaths" 
+
 
 notice = Pastel.new.black.on_bright_yellow.detach
 prompt = TTY::Prompt.new(active_color: notice)
@@ -43,7 +43,6 @@ end
 
 if main_menu == 'Energise Routine'
     timer = timers.after(1) {puts energy_routine.start}
-    timer = timers.after(2) {puts energy_routine.breathing} 
     timer = timers.after(3) {puts energy_routine.stretch_a} 
     timer = timers.after(4) {puts energy_routine.stretch_b} 
     timer = timers.after(5) {puts energy_routine.stretch_c} 
