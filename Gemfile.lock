@@ -36,7 +36,6 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
-  bundler (~> 2.2.22)
   colorize (~> 0.8.1)
   date (~> 0.0.1)
   rspec (~> 3.10.0)
