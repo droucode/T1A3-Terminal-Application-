@@ -7,6 +7,8 @@ require 'pastel'
 # require_relative 'menu.rb' 
 
 #get user input
+
+
 puts "Your Alarm"
 puts "24 or 12 hour time? (24)/(12)"
 timeHour = gets.chomp.to_i
@@ -60,3 +62,4 @@ while i < 1
 		#DO NOTHING AND LOOP
 	end
 end
+end 
