@@ -3,7 +3,7 @@ require 'timers'
 require 'tty-prompt'
 require 'pastel'
 
-#------Mindfulness Class-----#
+#------Mindfulness Class------#
 class Mindfulness
 
     def initialize 
