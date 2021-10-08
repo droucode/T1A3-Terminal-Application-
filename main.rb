@@ -2,7 +2,7 @@ require 'colorize'
 require 'timers'
 require 'tty-prompt'
 
-require_relative 'menu.rb' 
+# require_relative 'menu.rb' 
 
 class Energy_Prompts
     attr_accessor :start, :rest, :goal 

@@ -4,14 +4,7 @@ require 'timers'
 require 'tty-prompt'
 require 'pastel'
 
-require_relative 'menu.rb' 
-
-notice = Pastel.new.black.on_bright_yellow.detach
-prompt = TTY::Prompt.new(active_color: notice)
-main_menu = prompt.select("Ready Steady Go".colorize(:green)) do |menu|
-menu.choice 'Set_Alarm'
-menu.choice 'Reflection'
-end 
+# require_relative 'menu.rb' 
 
 #get user input
 puts "Your Alarm"
