@@ -40,6 +40,3 @@ Timers::Timer#cancel
         11.times {timers.wait}
     end 
 end 
-
-
-
