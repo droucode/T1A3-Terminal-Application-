@@ -31,18 +31,15 @@ while name_attempt < 2
             puts "Grrrromp, I didn't catch your name:"
         end 
         if name_attempt ==2 
-            print "\e[2J\e[f"
-            puts "i'll call you Al Jr. then, hows that? Pick one of these routines and you'll be on your way. See you soon"
+            auto_clear 
+            print "i'll call you Al Jr. then, hows that? Pick one of these routines and you'll be on your way. See you soon"
             name = "Al jr"
         end 
     end 
 end 
 
-
-
 #-------Main Menu---------#
 # WHILE LOOP - user can cycle throug the menu options. Exit menu by selecting Exit 
-
 
 while true 
     notice = Pastel.new.black.on_bright_yellow.detach
@@ -61,15 +58,13 @@ while true
     #runs energise routine
     energy_routine.timers 
 
-  
     when "Mindfulness Routine"
     #runs mindfulnes routine 
     mindfulness_routine.timers 
  
- 
     when "Exit"
     main_menu
-    puts "So long #{name}, come by the lake anytime, i'm always willing to crunch through anything with you.".colorize(:green) 
+    puts "So long #{name}, come by the lake anytime, i'm always willing to crunch through anything with you."
         break 
     end 
 end 
