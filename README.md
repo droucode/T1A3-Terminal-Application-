@@ -1,51 +1,69 @@
 # T1A3-Terminal-Application
 ## Software Development Plan 
 
+#### R4 GitHub Repository 
+
+https://github.com/droucode/T1A3-Terminal-Application- 
+
 #### R5: Develop a statement of purpose and scope for your application. It must include:
 
+
 ##### describe at a high level what the application will do
-The terminal application created will be a productivity buddy. The main feature of the terminal application will a clock and/or timer. The user will set the timer for any time interval required, for example 35 minutes. The user will input the time intervals in which the clock will check in with the user. These check in's, will be a variety of incrustations to the user such as: “stretch your neck and shoulders” “you’re on the right track.” 
+My terminal application will serve as productivity buddy, for the user. The purose of the application is to encourage  positive work habits and create an en enviroment where that is possible.
+
+The MVP for Crunch-Time is as follows: 
+
+- 1. The user has the option to run two programs "Energy" and "Mindfulness", which are run on a timer. The routines are created to serve different user needs.
+- 2. Alarm?
+- 3. Reflection .txt file 
 
 #### identify the problem it will solve and explain why you are developing it
 ##### The problem that will be addressed through this application: 
 
--  1: Keeping productivity on track can be difficult: often when you’re working on a solution or studying for long perid of time, work begins to lose focus and distractions begin to infiltrate workflow. The timer is intended to host a productive work environment. 
+Working productively is an life essential skill to develop apon. Often when you’re working on a solution or studying for long perid of time, work begins to lose focus and distractions begin to infiltrate workflow. Problems and outcomes are listed below: 
+ 
+- 1. Decrease distractions: By optimising focus and concentration. Both routines are designed to enourage the user to connect with their body, clear their mind and discover the intention of their task. 
 
--  2: Optimise focus and concentration: the application will achieve this by, the user working through short period of time with positive affirmation and good workflow habbits. 
+- 2. Reduce workload anxiety and stress: By working efficiently and slowly completing tasks with purpose, the individual doesnt lose sight of the task being achievable. 
 
--  3: Reduce workload anxiety:
- by working efficiently, and slowly completing tasks with purpose, the individual will feel that the task despite being difficult, it’s it always achievable. 
+- 3. Promote healthy habits: Exercising and practcing mindfulness are important components to a healthy and balanced lifestyle. 
 
--  4: identify the target audience:
-The target audience will be anybody with a task. Students working on their software, teams managing group assignment. The app footprint is for a variety of users across different industries and purposes. 
+- 4. Identify the target audience:
+The target audience will be anybody with a task. Students working on project/ teams managing group assignment/ work tasks. The applicaton has a large footprint, for a variety of users across different industries and purposes. 
 
 ##### explain how a member of the target audience will use it
-Target audience: tech student working on an assignment. The student will select their timeframe, select their check in intervals and begin their work. For groupwork: the team will repeat the steps above for optimum focus and group workflow. 
+Example Target Audience: Group assignment, it's important to remember that everybody works diferently; Each team member will select their prefered program "Energy"/"Mindfulness" or both and run the routine. Once everybody has reflected and aquired their focus and intention, colaboration and begin. (Alarm)
 
 ____________________________________________________________________________________________________________________
 #### R6	Develop a list of features that will be included in the application. It must include:
-- at least THREE features
-Menu (variables)
-Timer (array,.map)
-Timer (pause)
+- At least THREE features
+- Menu 
+- Energy Routine
+- Mindfulness Routine
+- Reflective .txt file 
+- Alarm 
 
+- Describe each feature
+Menu: The main menu is first point of naviagtion for the user and is responisble for the control flow of the application. The menu is build using the TTY-Prompt gem and will encompace a while loop.  
 
+Energy: 
 
-- describe each feature
-Menu: The application will have a menu, which will be the first point of naviagtion for the user. The menu will direct the user to select from timer options (Individual or group)
+Mindfulness:
+
+Reflective .txt file 
 
 
 Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
 - use of variables and the concept of variable scope
 - loops and conditional control structures
 - error handling
-
-Consult with your educator to check your features are sufficient .
-
 _____________________________________________________________________________________________________________________
 #### R7	Develop an outline of the user interaction and experience for the application.
 Your outline must include:
 - how the user will find out how to interact with / use each feature
+The user is initially greeted with a heading "Welcome". 
+
+
 - how the user will interact with / use each feature
 - how errors will be handled by the application and displayed to the user
 
