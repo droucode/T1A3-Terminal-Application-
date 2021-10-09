@@ -1,6 +1,5 @@
 require 'date'
 require 'colorize'
-require 'timers'
 require 'tty-prompt'
 require 'pastel'
 
@@ -8,6 +7,7 @@ require 'pastel'
 
 #get user input
 
+class Test  
 
 puts "Your Alarm"
 puts "24 or 12 hour time? (24)/(12)"
@@ -29,7 +29,7 @@ if timeHour == 12 && amPM == 2
 end
 
 current_time = DateTime.now
-setTime = DateTime.new(2017,4,26, hour, min)
+setTime = DateTime.new(2021,10,8, hour, min)
 
 current_time.strftime "%H:%M"
 setTime.strftime "%H:%M"
@@ -62,4 +62,6 @@ while i < 1
 		#DO NOTHING AND LOOP
 	end
 end
+
 end 
+
