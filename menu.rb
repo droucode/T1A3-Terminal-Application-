@@ -3,6 +3,7 @@ require 'colorize'
 require 'timers'
 require 'tty-prompt'
 require 'date'
+require 'tty-font'
 #---------Required Files-----#
 # require_relative 'ascii.rb'
 require_relative 'energy.rb'
@@ -25,17 +26,17 @@ while name_attempt < 2
         print "\e[2J\e[f"
         puts "(*bellows)Righto #{name} pick one of these routines and you'll be on your way. See you soon!"
         break 
-    else 
+     
         name_attempt +=1
-        if name == ""
+    elsif name == ""
             puts "Grrrromp, I didn't catch your name:"
-        end 
-        if name_attempt ==2 
+        
+    else  name_attempt ==2 
             auto_clear 
             print "i'll call you Al Jr. then, hows that? Pick one of these routines and you'll be on your way. See you soon"
-            name = "Al jr"
+            name = "Al Jr."
         end 
-    end 
+
 end 
 
 #-------Main Menu---------#
@@ -56,15 +57,23 @@ while true
     case main_menu
     when "Energise Routine"
     #runs energise routine
+
     energy_routine.timers 
 
     when "Mindfulness Routine"
     #runs mindfulnes routine 
     mindfulness_routine.timers 
  
+    when "Reflection"
+        txt_file_reflection
+    when "User Manual"
+        txt_file_usermanual
     when "Exit"
     main_menu
-    puts "So long #{name}, come by the lake anytime, i'm always willing to crunch through anything with you."
+    bye_message
+    puts "#{name}, come by the lake anytime, i'm always willing to crunch through anything"
         break 
     end 
 end 
+
+
