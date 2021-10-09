@@ -78,7 +78,28 @@ _______________________________________________________________________________
 
 You must include:
 - steps to install the application
-gems: Timers 4.3.3, Colorize 0.8.1, tty-prompt 0.23.1
+To run the application, you will require to have ruby installed on you machine. Directions can be found here https://www.ruby-lang.org/en/downloads/
+
+When you have ruby up, you will need to insall the following gems to run the application (show gems)
+
+you can do this through your terminal 
+
+gem install (for each gem)
+
+next- clone this repository (inset image) [This link will give you the option to copy the SSH link and download via the command line or download as a zip file. You can find more information on cloning a repository]
+
+runing the application 
+
+open your terminal 
+change into the directory which contains the repository 
+cd AmyDroungas_T1A3
+move into the source directory 
+cd src 
+run the applictaion 
+ruby menu.rb 
+
+
+
 - any dependencies required by the application to operate
 - any system/hardware requirements
 
