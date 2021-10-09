@@ -1,48 +1,48 @@
-#----------Gems--------------#
+#-----------------------------------------------GEMS-----------------------------------------------#
 require 'colorize'
 require 'timers'
 require 'tty-prompt'
 require 'date'
 require 'tty-font'
-#---------Required Files-----#
+#----------------------------------------REQUIRED FILES---------------------------------------------#
+
 # require_relative 'ascii.rb'
 require_relative 'energy.rb'
 require_relative 'mindfulness.rb'
 require_relative 'methods.rb'
 # require_relative 'test_alarm.rb'
-#--------Calling Classes-----#
+#-----------------------------------------CALLING CLASSES-------------------------------------------#
 energy_routine = Energy.new
 mindfulness_routine = Mindfulness.new 
 # clock = Test.new
-
-#------Welcome message and directions-------#
-
+#--------------------------WELCOME PAGE AND COMMAND LINE STATEMENTS---------------------------------#
 logo
 welcome
 name_attempt = 0 
 while name_attempt < 2
     name = gets.strip.capitalize 
     if name !=""
-        print "\e[2J\e[f"
+        auto_clear
         puts "(*bellows)Righto #{name} pick one of these routines and you'll be on your way. See you soon!"
-        break 
-     
+    break
+    else
         name_attempt +=1
-    elsif name == ""
-            puts "Grrrromp, I didn't catch your name:"
-        
-    else  name_attempt ==2 
+        if name == ""
+            print "Grrrromp, I didn't catch your name:"
+        end  
+            if name_attempt ==2 
             auto_clear 
-            print "i'll call you Al Jr. then, hows that? Pick one of these routines and you'll be on your way. See you soon"
+            puts "i'll call you Al Jr. then, hows that? Pick one of these routines and you'll be on your way. See you soon"
             name = "Al Jr."
         end 
-
+    end 
 end 
+#----------------------------------------------MAIN APPLICATION------------------------------------------#
 
-#-------Main Menu---------#
+
 # WHILE LOOP - user can cycle throug the menu options. Exit menu by selecting Exit 
-
 while true 
+
     notice = Pastel.new.black.on_bright_yellow.detach
     prompt = TTY::Prompt.new(active_color: notice)
     main_menu = prompt.select("") do |menu|
@@ -54,10 +54,10 @@ while true
     menu.choice "Exit"
     end 
     
+#CASE CONTAINING TIMERS AND MENU OPTIONS 
     case main_menu
     when "Energise Routine"
     #runs energise routine
-
     energy_routine.timers 
 
     when "Mindfulness Routine"
@@ -65,15 +65,17 @@ while true
     mindfulness_routine.timers 
  
     when "Reflection"
+    #runs relflecton .txt file
         txt_file_reflection
     when "User Manual"
+    #runs user manual .txt file 
         txt_file_usermanual
+#USER EXITS/QUITS THE APPLICATION 
     when "Exit"
     main_menu
+    #method containing tty-font 
     bye_message
     puts "#{name}, come by the lake anytime, i'm always willing to crunch through anything"
         break 
     end 
 end 
-
-

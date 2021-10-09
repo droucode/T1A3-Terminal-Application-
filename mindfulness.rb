@@ -1,9 +1,10 @@
+#-----------------------------------------------GEMS-----------------------------------------------#
 require 'colorize'
 require 'timers'
 require 'tty-prompt'
 require 'pastel'
 
-#------Mindfulness Class------#
+#-----------------------------------------MINDFULNESS CLASS ----------------------------------------#
 class Mindfulness
 
     def initialize 
@@ -23,14 +24,14 @@ class Mindfulness
         @body_a = "Slowly, start to roll your shoulders-5 times on each side"
         @body_b = "Lightly strech your neck from side to side"
     end 
-#------Timers Method------#
+#-----------------------------------------------TIMERS METHOD-----------------------------------------------#
     def timers
 #Timers Gem 
 Timers::Group.new
 timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
-#energy routine timer 
+        #energy routine timer 
         timer = timers.after(1) {puts @start} 
         timer = timers.after(2)  {puts @breathing_a}
         timer = timers.after(3) {puts @breathing_b}
