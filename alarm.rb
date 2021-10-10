@@ -9,7 +9,7 @@ def alarm
 puts "Ready Steady Go"
 
 #user input/converting to an integer 
-puts "Start you clock: Input Hour and press enter"
+puts "Start you clock: Input Hour (from 1-12) and press enter"
 hour = gets.chomp.to_i
 puts "Input minutes and press enter"
 min = gets.chomp.to_i
