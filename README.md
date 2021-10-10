@@ -47,28 +47,28 @@ Example Target Audience: Group assignment, it's important to remember that every
 - Describe each feature
 Menu.rb: The application begins with a while loop, which greets the user stores their name, which it iterated. The main menu follows and is first point of naviagtion for the user and is responisble for the control flow of the application. The menu is build using the TTY-Prompt gem and is enclosed within a while loop and case for command line statements that help the user navigate through the application. 
 
-![welcome_loop](welcomeloop.png)
+![welcome_loop](images/welcomeloop.png)
 as you can see above, if the user does not enter their name after the second rotation of the loop, the loop breaks and the application will assign the user a preset name of "Al Jr." 
 
-![main_menu_prompt](tty-prompt_menu.png)
+![main_menu_prompt](images/tty-prompt_menu.png)
 
-![case_main_menu](main_menu_case.png)
+![case_main_menu](images/main_menu_case.png)
 
-![exit_loop](exit.png)
+![exit_loop](images/exit.png)
 
 Energy.rb: This file is where the code for the energy routine is stored within an Energy Class. Within class the variables are initialsed, which allows the code to DRY when calling the routine steps witin the timers.The timers are stored in a separate method. This file is relative_require in main.rb and the classes are called in order for the program to run. 
 
-![energy_class](energy_class.png)
-![energytimers_method](energytimers_method.png)
+![energy_class](images/energy_class.png)
+![energytimers_method](images/energytimers_method.png)
 
 Mindfulness: the same logic as above applied to the mindfuness routine; differnt variables and routine. 
 
 usermaual.txt file: this is a read only file that is displayed to the user, when the menu choice is selected.the file is stored within its own method. 
 
-![usermanual.txt](usermanual.png)
+![usermanual.txt](images/usermanual.png)
 
 Alarm: The user is reqired to enter and "Hour" and "Minute" to set their clock. Each vaiable is converted to an integer. Using the date gem, the current date is set for the alarm to take affect and a conditional control structur is set to accept 12h hour. Then a while loop is incorporated to run the alarm sound. It is set to rotate once and then prompts the user back to the main menu- from where they can quit the application. 
-![alarmloop](alarmloop.png)
+![alarmloop](images/alarmloop.png)
 
 Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
 - use of variables and the concept of variable scope
@@ -99,21 +99,21 @@ errors are handled by conditional control structures, whereby of the user input 
 #### R8	Develop a diagram which describes the control flow of your application. Your diagram must:
 - show the workflow/logic and/or integration of the features in your application for each feature.
 
-![control_flow_diagram](controlflow_diagram.png)
+![control_flow_diagram](images/controlflow_diagram.png)
 
 #### R9 Project Management 
 
 I utilised trello to manage the build of my terminal application. I installed a power-up "Card Priorty" which allowed be to manage my tasks in further detail. I found using the check-list function very useful in keeping track of my tasks. 
 
-![trello_start](trello_start.png)
-![trello_page1](trello_1.png)
-![trello_page2](trello_2.png)
-![trello_page4](trello_4.png)
-![trello_page6](trello_6.png)
-![trello_page12](trello_12.png)
-![trello_page11](trello_11.png)
-![trello_page9](trello_9.png)
-![trello_complete](complete_tello.png)
+![trello_start](images/trello_start.png)
+![trello_page1](images/trello_1.png)
+![trello_page2](images/trello_2.png)
+![trello_page4](images/trello_4.png)
+![trello_page6](images/trello_6.png)
+![trello_page12](images/trello_12.png)
+![trello_page11](images/trello_11.png)
+![trello_page9](images/trello_9.png)
+![trello_complete](images/complete_tello.png)
 
 #### R10 Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
 
@@ -125,11 +125,11 @@ To run the application, you will require to have ruby installed on you machine. 
 When you have ruby up, you will need to insall the following gems to run the application 
 you can do this through your terminal 
 
-![gemfile](gems.png)
+![gemfile](images/gems.png)
 
 clone this repository 
 
-![instructional_image_to_clone_repoository](clone.png)
+![instructional_image_to_clone_repoository](images/clone.png)
 
 here you will copy the SSH link and into your terminal "git clone" and paste the link. You can open the zip file in a text editor or simply run it through your terminal. 
 
@@ -143,8 +143,8 @@ ruby menu.rb
 
 #### R17	Design TWO tests which check that the application is running as expected.
 
-![tests_one_to_five](test1-5.png)
-![tests_five_to_twelve](test5-12.png)
+![tests_one_to_five](images/test1-5.png)
+![tests_five_to_twelve](images/test5-12.png)
 
 #### ToolBox 
 
