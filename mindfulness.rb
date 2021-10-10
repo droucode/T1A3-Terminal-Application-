@@ -35,7 +35,7 @@ timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
         #energy routine timer 
-        one_second_timers.after(1) {puts @start} 
+        one_second_timer = timers.after(1) {puts @start} 
         five_second_timer = timers.after(5)  {puts @breathing_a}
         thirty_second_timer = timers.after(35) {puts @breathing_b}
         thirty_second_timer = timers.after(95) {puts @breathing_c}
