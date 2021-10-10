@@ -129,6 +129,8 @@ here you will copy the SSH link, into your terminal and run the command ```git c
 open your terminal 
 change into the directory which contains the repository 
 ```cd AmyDroungas_T1A3```
+change directories into the source directory
+cd src
 run the applictaion 
 ```ruby menu.rb```
 
