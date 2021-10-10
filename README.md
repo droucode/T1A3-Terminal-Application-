@@ -86,6 +86,8 @@ you can do this through your terminal
 
 gem install (for each gem)
 
+brew install libsndfile 
+
 next- clone this repository (inset image) [This link will give you the option to copy the SSH link and download via the command line or download as a zip file. You can find more information on cloning a repository]
 
 runing the application 

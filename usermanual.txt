@@ -5,8 +5,7 @@ step 1. Enter your name for Al'
 step 2. Choose your prefered routin, you are weclcome to complete both. They roughly run for 7 minuties each. 
 setp 3. Once you're finsihed and your goals are set, put your alarm on your desired amount of time. Idealy 
 keep working cunks short and many 
-step 4. once your alarm has gone off, run the relfection .txt file and log your progresses. What went well,
-what could you improve- this will help keep you on task and feeling good. 
+step 4. 
 step 5. Exit the app and Al' will see you off. 
 
 Enjoy. 

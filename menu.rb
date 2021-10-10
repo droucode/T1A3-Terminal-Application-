@@ -10,11 +10,13 @@ require 'tty-font'
 require_relative 'energy.rb'
 require_relative 'mindfulness.rb'
 require_relative 'methods.rb'
-# require_relative 'test_alarm.rb'
+require_relative 'alarm.rb'
+
+
 #-----------------------------------------CALLING CLASSES-------------------------------------------#
 energy_routine = Energy.new
 mindfulness_routine = Mindfulness.new 
-# clock = Test.new
+
 #--------------------------WELCOME PAGE AND COMMAND LINE STATEMENTS---------------------------------#
 logo
 welcome
@@ -66,10 +68,14 @@ while true
  
     when "Reflection"
     #runs relflecton .txt file
-        txt_file_reflection
+        # txt_file_reflection
     when "User Manual"
     #runs user manual .txt file 
         txt_file_usermanual
+
+    when "Set_Alarm"
+    #runs alarm
+        alarm 
 #USER EXITS/QUITS THE APPLICATION 
     when "Exit"
     main_menu

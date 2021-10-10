@@ -39,11 +39,12 @@ def test
     puts "test fitness"
 end 
 
-def txt_file_reflection
-    file = File.open("relfection.txt", 'w+')
-        file.puts("")
-        file.close()
-end 
+# def txt_file_reflection
+#     file = File.open("reflection.txt", 'w+')
+#         file.puts("abc")
+#         file.close()
+#     end 
+# end 
 
 def txt_file_usermanual 
     file = File.open("usermanual.txt", 'r') 
@@ -51,9 +52,10 @@ def txt_file_usermanual
     file.close()
 end 
 
-# r - reading 
-# a - apending to a file
+# r - reading ''
+# a - apendin '' to a file
 # w - just writing 
 # w+ - reading and writing 
 # a+ - open a file for reading and apending 
 # r+ = open a file for updating, reading and writing 
+
