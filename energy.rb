@@ -31,15 +31,15 @@ timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
         #energy routine timer 
-timer = timers.after(1) {puts @start}
-timer = timers.after(5) {puts @stretch_a} 
-timer = timers.after(35) {puts @stretch_b} 
-timer = timers.after(95) {puts @stretch_c} 
-timer = timers.after(125) {puts @movement_a}
-timer = timers.after(155) {puts @movement_b} 
-timer = timers.after(185) {puts @rest}
-timer = timers.after(215) {puts @movement_c} 
-timer = timers.after(275) {puts @movement_d} 
+one_second_timer = timers.after(1) {puts @start}
+five_second_timer = timers.after(5) {puts @stretch_a} 
+thirty_second_timer = timers.after(35) {puts @stretch_b} 
+thirty_second_timer = timers.after(95) {puts @stretch_c} 
+thirty_second_timer = timers.after(125) {puts @movement_a}
+thirty_second_timer = timers.after(155) {puts @movement_b} 
+thirty_second_timer = timers.after(185) {puts @rest}
+thirty_second_timer = timers.after(215) {puts @movement_c} 
+thirty_second_timer = timers.after(275) {puts @movement_d} 
 timer = timers.after(305) {puts @goal}
         timers.resume 
         11.times {timers.wait}
