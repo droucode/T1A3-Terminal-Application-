@@ -8,21 +8,21 @@ require 'pastel'
 class Mindfulness
 
     def initialize 
-        @start = "Mindfullness is very usful activity in acepting and redicing stress and anxiety built up on your body, you can practice mindfulness as many times a day as you like. This exercise will run for 6 minutues and will clear your mind before you start your task.".colorize(:cyan)
+        @start = "Mindfulness is a very useful activity in accepting and reducing stress and anxiety built up on your body. \nYou can practice mindfulness as many times a day as you like. \nThis exercise will run for roughly 6 minutues and will clear your mind before you start your task.".colorize(:cyan)
         @goal_a = "Start to visualise what you would like to achieve today.".colorize(:cyan)
         @goal_b = "Keep your goal realistic and achievable.".colorize(:cyan)
-        @goal_c = "Think about how long you're going to set your alarm and remember small and steady steps, goodluck!".colorize(:cyan)
+        @goal_c = "Think about how long you're going to set your alarm ofor and remember small and steady steps. Goodluck!".colorize(:cyan)
         @breathing_a = "Take 3 deep slow breaths and take 30 seconds to scan your body"
         @breathing_b = "Notice 3 things your can hear"
         @breathing_c = "Notice 3 things your can see"
         @breathing_d = "Bring your attention to your breath"
         @breathing_e = "Be aware of the movement of your body, how your chest rises and falls"
         @breathing_f = "Find a pattern in your breath and achor yourself to it"
-        @breathing_g = "Notice any discomfort in your body, any tention in your shoulders?"
+        @breathing_g = "Notice any discomfort in your body, (any tension in your shoulders?)"
         @breathing_h = "Keep focus on your breath and continue to scan your body"
-        @breathing_i = "Dont lose focus of your breath, thats your anchor"
-        @body_a = "Slowly, start to roll your shoulders-5 times on each side"
-        @body_b = "Lightly strech your neck from side to side"
+        @breathing_i = "Do not lose focus of your breath, it is your anchor"
+        @body_a = "Slowly, start to roll your shoulders. x5 on each side"
+        @body_b = "Lightly stretch your neck from side to side"
     end 
 #-----------------------------------------------TIMERS METHOD-----------------------------------------------#
     def timers

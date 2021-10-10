@@ -28,8 +28,8 @@ end
 
 def welcome 
     puts "(*BELLOWS...slash, hisssss...!whoooo's that in my river!*)"
-    print "Oh hey, I'm Al'. Sorry, thought you were someone else. Come on over, you'll be crunching through your loadload like an aligator in no time."
-    puts  " Whats your name?"
+    print "Oh hey, I'm Al'. Sorry, thought you were someone else. Come on over, you'll be crunching through your workload like an alligator in no time."
+    puts  " What's your name?"
 end 
 
 def bye_message 

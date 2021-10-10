@@ -21,7 +21,7 @@ while name_attempt < 2
     name = gets.strip.capitalize 
     if name !=""
         auto_clear
-        puts "Righto #{name}, pick one of these routines and you'll be on your way. i'll see you down the south side of the river!"
+        puts "Righto #{name}, pick one of these routines and you'll be on your way. I'll see you down the south side of the river!"
     break
     else
         name_attempt +=1
@@ -30,7 +30,7 @@ while name_attempt < 2
         end  
             if name_attempt ==2 
             auto_clear 
-            puts "i'll call you Al Jr. then, hows that? Pick one of these routines and you'll be on your way. See you soon"
+            puts "I'll call you Al Jr. then, how's that? Pick one of these routines and you'll be on your way. See you soon"
             name = "Al Jr."
         end 
     end 
@@ -74,7 +74,7 @@ while true
     mindfulness_routine.timers 
     #user can exit or reselect a differnt menu choice 
     else (input == "N")
-        puts "You've landed back at the start, when you're ready- select your menu choice".colorize:cyan
+        puts "You've landed back at the start, when you're ready - select your menu choice".colorize:cyan
     main_menu
     end 
     when "User Manual"
@@ -91,7 +91,7 @@ while true
     main_menu
     #method containing tty-font 
     bye_message
-    puts "Outta here already #{name}, Well.. come by the rive anytime, i'm always willing to crunch through anything (*BELLOWS*)"
+    puts "Outta here already #{name}, Well.. come by the rive anytime, I'm always willing to crunch through anything (*BELLOWS*)"
         break 
     end 
 end 
