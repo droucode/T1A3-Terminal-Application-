@@ -20,7 +20,8 @@ class Energy
             @movement_d = "30 seconds, startjumps" 
     end 
 #-----------------------------------------------TIMERS METHOD-----------------------------------------------#
-    def timers 
+
+def timers 
 #Timers Gem 
 	# An individual timer set to fire a given proc at a given time. A timer is
 	# always connected to a Timer::Group.You can manually enter this state by
@@ -30,16 +31,16 @@ timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
         #energy routine timer 
-        1_second_timer = timers.after(1) {puts @start}
-        30_second_timer = timers.after(30) {puts @stretch_a} 
-        30_second_timer = timers.after(60) {puts @stretch_b} 
-        30_second_timer = timers.after(90) {puts @stretch_c} 
-        30_second_timer = timers.after(120) {puts @movement_a}
-        30_second_timer = timers.after(150) {puts @movement_b} 
-        10_second_timer = timers.after(180) {puts @rest}
-        30_second_timer = timers.after(210) {puts @movement_c} 
-        30_second_timer = timers.after(270) {puts @movement_d} 
-        10_second_timer = timers.after(300) {puts @goal}
+timer = timers.after(1) {puts @start}
+timer = timers.after(5) {puts @stretch_a} 
+timer = timers.after(35) {puts @stretch_b} 
+timer = timers.after(95) {puts @stretch_c} 
+timer = timers.after(125) {puts @movement_a}
+timer = timers.after(155) {puts @movement_b} 
+timer = timers.after(185) {puts @rest}
+timer = timers.after(215) {puts @movement_c} 
+timer = timers.after(275) {puts @movement_d} 
+timer = timers.after(305) {puts @goal}
         timers.resume 
         11.times {timers.wait}
     end 

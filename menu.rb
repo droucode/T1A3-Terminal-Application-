@@ -54,16 +54,29 @@ while true
 
     case main_menu
     when "Energise Routine"
-    #runs energise routine
+    prompt.say ("Al' here, would you like to start #{name}? Y/N") 
+    input = gets.strip.capitalize
+    if (input == "Y")
+    #runs energy routine
     energy_routine.timers 
-
+    #user can exit or reselect a differnt menu choice 
+    else (input == "N")
+        puts "You've landed back at the start, when you're ready- select your menu choice".colorize:cyan
+    main_menu
+    end 
+        
     when "Mindfulness Routine"
+    #user input to begin the routine
+    prompt.say ("Al' here, would you like to start #{name}? Y/N") 
+    input = gets.strip.capitalize
+    if (input == "Y")
     #runs mindfulnes routine 
     mindfulness_routine.timers 
- 
-    when "Reflection"
-    #runs relflecton .txt file
-        # txt_file_reflection
+    #user can exit or reselect a differnt menu choice 
+    else (input == "N")
+        puts "You've landed back at the start, when you're ready- select your menu choice".colorize:cyan
+    main_menu
+    end 
     when "User Manual"
     #runs user manual .txt file 
         txt_file_usermanual

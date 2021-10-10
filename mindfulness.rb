@@ -35,21 +35,21 @@ timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
         #energy routine timer 
-        1_second_timer = timers.after(1) {puts @start} 
-        30_second_timer = timers.after(30)  {puts @breathing_a}
-        30_second_timer = timers.after(60) {puts @breathing_b}
-        30_second_timer = timers.after(90) {puts @breathing_c}
-        30_second_timer = timers.after(120) {puts @breathing_d} 
-        30_second_timer = timers.after(150) {puts @breathing_e} 
-        30_second_timer = timers.after(180) {puts @breathing_f} 
-        30_second_timer = timers.after(210) {puts @breathing_g} 
-        30_second_timer = timers.after(240) {puts @breathing_h} 
-        30_second_timer = timers.after(270) {puts @breathing_i}
-        30_second_timer = timers.after(300) {puts @body_a}
-        30_second_timer = timers.after(330) {puts @body_b}
-        30_second_timer = timers.after(360) {puts @goal_a}
-        30_second_timer = timers.after(390) {puts @goal_b}
-        30_second_timer = timers.after(420) {puts @goal_c}
+        one_second_timers.after(1) {puts @start} 
+        five_second_timer = timers.after(5)  {puts @breathing_a}
+        thirty_second_timer = timers.after(35) {puts @breathing_b}
+        thirty_second_timer = timers.after(95) {puts @breathing_c}
+        thirty_second_timer = timers.after(125) {puts @breathing_d} 
+        thirty_second_timer = timers.after(155) {puts @breathing_e} 
+        thirty_second_timer = timers.after(185) {puts @breathing_f} 
+        thirty_second_timer = timers.after(215) {puts @breathing_g} 
+        thirty_second_timer = timers.after(245) {puts @breathing_h} 
+        thirty_second_timer = timers.after(275) {puts @breathing_i}
+        thirty_second_timer = timers.after(305) {puts @body_a}
+        thirty_second_timer = timers.after(335) {puts @body_b}
+        thirty_second_timer = timers.after(365) {puts @goal_a}
+        thirty_second_timer = timers.after(395) {puts @goal_b}
+        timer = timers.after(425) {puts @goal_c}
         timers.resume 
         15.times {timers.wait}
     end 
