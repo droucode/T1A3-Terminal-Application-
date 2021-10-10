@@ -101,6 +101,19 @@ errors are handled by conditional control structures, whereby of the user input 
 
 ![control_flow_diagram](controlflow_diagram.png)
 
+#### R9 Project Management 
+
+I utilised trello to manage the build of my terminal application. I installed a power-up "Card Priorty" which allowed be to manage my tasks in further detail. I found using the check-list function very useful in keeping track of my tasks. 
+
+![trello_start](trello_start.png)
+![trello_page1](trello_1.png)
+![trello_page2](trello_2.png)
+![trello_page4](trello_4.png)
+![trello_page6](trello_6.png)
+![trello_page12](trello_12.png)
+![trello_page11](trello_11.png)
+![trello_page9](trello_9.png)
+![trello_complete](complete_tello.png)
 
 #### R10 Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
 
