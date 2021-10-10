@@ -120,7 +120,7 @@ I utilised trello to manage the build of my terminal application. I installed a 
 You must include:
 - steps to install the application
 To run the application, you will require to have ruby installed on you machine. Directions can be found here 
-![ruby_install_link](https://www.ruby-lang.org/en/downloads/)
+![ruby_install_link](https://www.ruby-lang.org/en/downloads)
 
 When you have ruby up, you will need to insall the following gems to run the application 
 you can do this through your terminal 
@@ -145,3 +145,12 @@ ruby menu.rb
 
 ![tests_one_to_five](test1-5.png)
 ![tests_five_to_twelve](test5-12.png)
+
+#### ToolBox 
+
+1. Git Hub 
+2. Visual Studio Code
+3. Trello 
+4. Git 
+5. Ruby 
+6. Ruby Gems 
