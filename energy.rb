@@ -8,16 +8,16 @@ class Energy
     #initialise variables containing routine steps and flow 
     notice = Pastel.new
     def initialize()
-            @start = "Getting active and into your body, is great way to clear your mind and ignite your endorphines before you start a task. Complete these exercises within your capabilities and have fun. This program will run for roughly 6 minutes. Get ready to get your blood circulating and clear your mind ready to complete your task!".colorize(:cyan)
+            @start = "Getting active and into your body, is great way to clear your mind and ignite your endorphines before you start a task. \nComplete these exercises within your capabilities and have fun. This program will run for roughly 6 minutes. \nGet ready to get your blood circulating and clear your mind ready to complete your task!".colorize(:cyan)
             @rest = "check your breath and rest for 10 seconds"
-            @goal = "Now that you're done, take some a couple of minutes to think about what you would like to achieve, keep your goal achievable and work in small and prodictive blocks. Goodluck!- Al'".colorize(:cyan)
+            @goal = "Now that you're done, take a couple of minutes to think about what you would like to achieve. Keep your goal achievable and work in small productive blocks. Goodluck!- Al'".colorize(:cyan)
             @stretch_a = "30 seconds, stretch each shoulder"
             @stretch_b = "30 seconds, stretch your neck side to side"
             @stretch_c = "30 seconds, touch your toes, or where youre comfortable to reach"
             @movement_a = "30 seconds, jog on the spot"
-            @movement_b = "30 seconds, alernating arm punches (across your body)"
+            @movement_b = "30 seconds, alternaing arm punches (across your body)"
             @movement_c = "30 seconds, squats"
-            @movement_d = "30 seconds, startjumps" 
+            @movement_d = "30 seconds, starjumps" 
     end 
 #-----------------------------------------------TIMERS METHOD-----------------------------------------------#
 
