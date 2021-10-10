@@ -8,13 +8,13 @@ require 'pastel'
 class Mindfulness
 
     def initialize 
-        @start = "Mindfulness is a very useful activity in accepting and reducing stress and anxiety built up on your body. \nYou can practice mindfulness as many times a day as you like. \nThis exercise will run for roughly 6 minutues and will clear your mind before you start your task.".colorize(:cyan)
+        @start = "Mindfulness is a very useful activity in accepting and reducing stress and anxiety built up in your body. \nYou can practice mindfulness as many times a day as you like. \nThis exercise will run for roughly 6 minutues and will clear your mind before you start your task.".colorize(:cyan)
         @goal_a = "Start to visualise what you would like to achieve today.".colorize(:cyan)
         @goal_b = "Keep your goal realistic and achievable.".colorize(:cyan)
         @goal_c = "Think about how long you're going to set your alarm ofor and remember small and steady steps. Goodluck!".colorize(:cyan)
         @breathing_a = "Take 3 deep slow breaths and take 30 seconds to scan your body"
-        @breathing_b = "Notice 3 things your can hear"
-        @breathing_c = "Notice 3 things your can see"
+        @breathing_b = "Notice 3 things you can hear"
+        @breathing_c = "Notice 3 things you can see"
         @breathing_d = "Bring your attention to your breath"
         @breathing_e = "Be aware of the movement of your body, how your chest rises and falls"
         @breathing_f = "Find a pattern in your breath and achor yourself to it"

@@ -45,7 +45,6 @@ while true
     menu.choice 'Energise Routine'
     menu.choice 'Mindfulness Routine'
     menu.choice 'Set_Alarm'
-    menu.choice 'Reflection'
     menu.choice 'User Manual'
     menu.choice "Exit"
     end 

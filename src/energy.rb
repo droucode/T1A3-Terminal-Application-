@@ -15,7 +15,7 @@ class Energy
             @stretch_b = "30 seconds, stretch your neck side to side"
             @stretch_c = "30 seconds, touch your toes, or where youre comfortable to reach"
             @movement_a = "30 seconds, jog on the spot"
-            @movement_b = "30 seconds, alternaing arm punches (across your body)"
+            @movement_b = "30 seconds, alternating arm punches (across your body)"
             @movement_c = "30 seconds, squats"
             @movement_d = "30 seconds, starjumps" 
     end 
