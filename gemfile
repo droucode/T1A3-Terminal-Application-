@@ -17,3 +17,4 @@ gem 'date', '~> 0.0.1'
 gem 'pastel', '~> 0.8.0'
 
 gem 'tty-font', '~> 0.2.0'
+

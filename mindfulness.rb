@@ -8,7 +8,7 @@ require 'pastel'
 class Mindfulness
 
     def initialize 
-        @start = "Mindfullness is very usful activity in acepting and redicing stress and anxiety built up on your body, you can practice mindfulness as many times a day as you like. this exercise will run for 6 minutues. Clear your mind before you start your task.".colorize(:cyan)
+        @start = "Mindfullness is very usful activity in acepting and redicing stress and anxiety built up on your body, you can practice mindfulness as many times a day as you like. This exercise will run for 6 minutues and will clear your mind before you start your task.".colorize(:cyan)
         @goal_a = "Start to visualise what you would like to achieve today.".colorize(:cyan)
         @goal_b = "Keep your goal realistic and achievable.".colorize(:cyan)
         @goal_c = "Think about how long you're going to set your alarm and remember small and steady steps, goodluck!".colorize(:cyan)
@@ -27,26 +27,29 @@ class Mindfulness
 #-----------------------------------------------TIMERS METHOD-----------------------------------------------#
     def timers
 #Timers Gem 
+	# An individual timer set to fire a given proc at a given time. A timer is
+	# always connected to a Timer::Group.You can manually enter this state by
+	# calling #cancel
 Timers::Group.new
 timers = Timers::Group.new
 Timers::Group#after
 Timers::Timer#cancel
         #energy routine timer 
-        timer = timers.after(1) {puts @start} 
-        timer = timers.after(2)  {puts @breathing_a}
-        timer = timers.after(3) {puts @breathing_b}
-        timer = timers.after(4) {puts @breathing_c}
-        timer = timers.after(5) {puts @breathing_d} 
-        timer = timers.after(6) {puts @breathing_e} 
-        timer = timers.after(7) {puts @breathing_f} 
-        timer = timers.after(8) {puts @breathing_g} 
-        timer = timers.after(9) {puts @breathing_h} 
-        timer = timers.after(10) {puts @breathing_i}
-        timer = timers.after(11) {puts @body_a}
-        timer = timers.after(12) {puts @body_b}
-        timer = timers.after(13) {puts @goal_a}
-        timer = timers.after(14) {puts @goal_b}
-        timer = timers.after(15) {puts @goal_c}
+        1_second_timer = timers.after(1) {puts @start} 
+        30_second_timer = timers.after(30)  {puts @breathing_a}
+        30_second_timer = timers.after(60) {puts @breathing_b}
+        30_second_timer = timers.after(90) {puts @breathing_c}
+        30_second_timer = timers.after(120) {puts @breathing_d} 
+        30_second_timer = timers.after(150) {puts @breathing_e} 
+        30_second_timer = timers.after(180) {puts @breathing_f} 
+        30_second_timer = timers.after(210) {puts @breathing_g} 
+        30_second_timer = timers.after(240) {puts @breathing_h} 
+        30_second_timer = timers.after(270) {puts @breathing_i}
+        30_second_timer = timers.after(300) {puts @body_a}
+        30_second_timer = timers.after(330) {puts @body_b}
+        30_second_timer = timers.after(360) {puts @goal_a}
+        30_second_timer = timers.after(390) {puts @goal_b}
+        30_second_timer = timers.after(420) {puts @goal_c}
         timers.resume 
         15.times {timers.wait}
     end 
