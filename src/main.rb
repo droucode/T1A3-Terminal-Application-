@@ -6,10 +6,10 @@ require 'date'
 require 'tty-font'
 #----------------------------------------REQUIRED FILES---------------------------------------------#
 # require_relative 'ascii.rb'
-require_relative 'energy.rb'
-require_relative 'mindfulness.rb'
-require_relative 'methods.rb'
-require_relative 'alarm.rb'
+require_relative 'src/energy.rb'
+require_relative 'src/mindfulness.rb'
+require_relative 'src/methods.rb'
+require_relative 'src/alarm.rb'
 #-----------------------------------------CALLING CLASSES-------------------------------------------#
 energy_routine = Energy.new
 mindfulness_routine = Mindfulness.new 
