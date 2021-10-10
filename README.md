@@ -130,5 +130,5 @@ ruby menu.rb
 
 #### R17	Design TWO tests which check that the application is running as expected.
 
-
-
+![tests_one_to_five](test1-5.png)
+![tests_five_to_twelve](test5-12.png)
